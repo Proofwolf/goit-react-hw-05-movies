@@ -13,6 +13,7 @@ const Movies = () => {
   const [searchParam] = useSearchParams();
   const query = searchParam.get('searchQuery');
 
+  
   //Виконуємо запит при кожній зміні query
   useEffect(() => {
     if (!query) return;
